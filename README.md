@@ -30,3 +30,25 @@ private static final int months_in_a_year = 12
   term in years = 20
 
   monthly rate = 716
+
+
+      def cd_calculator(initial_deposit, annual_interest_rate, cd_term_years):
+
+                annual_interest_rate_decimal = annual_interest_rate / 100
+
+
+        future_value = initial_deposit * (1 + annual_interest_rate_decimal)**cd_term_years
+
+
+        print(f"Initial Deposit: ${initial_deposit:,.2f}")
+        print(f"Annual Interest Rate: {annual_interest_rate:.2f}%")
+        print(f"CD Term: {cd_term_years} years")
+        print(f"Future Value: ${future_value:,.2f}")
+
+     CD with a $1,500 initial deposit, 2% annual interest rate, and a 6-year term
+                initial_deposit = 1500
+        annual_interest_rate = 2.0
+        cd_term_years = 6
+
+        cd_calculator(initial_deposit, annual_interest_rate, cd_term_years)
+
